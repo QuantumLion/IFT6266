@@ -20,7 +20,7 @@ if __name__ == '__main__':
     if not os.path.isdir("trained_models"):
         os.makedirs("trained_models")
 
-    """
+    
 
     #LEARN 1
     train_set_1 = coco_loader(input="train2014_9969samples", target="train2014_9969samples")
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     predict(valid_input_2, valid_target, valid_cap_id, valid_length, depth_predicted=24, trained_model_file=TRAINED_MODEL_FILE_2, output_folder=OUTPUT_FOLDER_VALID_2)
 
 
-    """
+
 
     #LEARN 3
     train_set_3 = coco_loader(input=OUTPUT_FOLDER_TRAIN_2, target="train2014_9969samples")
@@ -89,7 +89,7 @@ if __name__ == '__main__':
     predict(valid_input_3, valid_target, valid_cap_id, valid_length, depth_predicted=28, trained_model_file=TRAINED_MODEL_FILE_3, output_folder=OUTPUT_FOLDER_VALID_3)
 
 
-    """
+
 
     #LEARN 4
     train_set_4 = coco_loader(input=OUTPUT_FOLDER_TRAIN_3, target="train2014_9969samples")
@@ -108,5 +108,3 @@ if __name__ == '__main__':
     #PREDICT 4
     predict(train_input_4, train_target, train_cap_id, train_length, depth_predicted=32, trained_model_file=TRAINED_MODEL_FILE_4, output_folder=OUTPUT_FOLDER_TRAIN_4)
     predict(valid_input_4, valid_target, valid_cap_id, valid_length, depth_predicted=32, trained_model_file=TRAINED_MODEL_FILE_4, output_folder=OUTPUT_FOLDER_VALID_4)
-
-    """
